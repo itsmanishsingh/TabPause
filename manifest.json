@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Pause on Tab Change",
+  "version": "1.0",
+  "description": "Pauses YouTube videos when the tab is changed.",
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "scripting",
+    "webNavigation"
+  ],
+  "host_permissions": [
+    "https://*.youtube.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
