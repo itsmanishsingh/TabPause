@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "TabPause",
-  "version": "1.4.1",
+  "version": "1.4.5",
   "description": "Pauses YouTube videos when the tab is changed.",
   "permissions": [
     "tabs",
