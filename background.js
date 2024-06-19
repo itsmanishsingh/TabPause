@@ -124,37 +124,37 @@ function checkVisibility() {
 
     if (!videoTitleElement || !videoDescriptionElement || !jsonLd) {
       console.warn('Required elements not found in the DOM.');
-      return true; // Default to handling pause if elements are not found
+      return true; 
     }
 
     const videoTitle = videoTitleElement.innerText;
     const videoDescription = videoDescriptionElement.content;
 
-    // Parse JSON-LD structured data for the video category
+   
     let videoCategory = '';
     const videoData = JSON.parse(jsonLd.textContent);
     if (videoData && videoData.genre) {
       videoCategory = videoData.genre;
     }
 
-    // Example logic for exceptions
+
     const musicKeywords = [
       'song', 'music', 'album', 'track', 'lyrics', 'official'
     ];
 
-    // Check if the video title or description contains music-related keywords
+    // Checking if the video title or description contains music-related keywords
     const isMusicVideo = musicKeywords.some(keyword => 
       videoTitle.toLowerCase().includes(keyword) || 
       videoDescription.toLowerCase().includes(keyword)
     );
 
-    // Check if the video category is related to music
+    // Checking  if the video category is related to music
     const musicCategories = [
       'Music', 'Entertainment'
     ];
     const isMusicCategory = musicCategories.includes(videoCategory);
 
-    // If the video is classified as music, do not handle pause
+    // If the video is classified as music, then skip the pause 
     return !(isMusicVideo || isMusicCategory);
   }
 }
