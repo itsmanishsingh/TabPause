@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (!videoTitleElement || !videoDescriptionElement || !jsonLd) {
       console.warn('Required elements not found in the DOM.');
-      return true; // Default to handling pause if elements are not found
+      return true; 
     }
 
     const videoTitle = videoTitleElement.innerText;
