@@ -1,4 +1,4 @@
-# TabPause - Browser Extension Documentation
+# TabPause - Browser Extension 
 
 ## Overview
 TabPause is a sophisticated browser extension designed to optimize user productivity by intelligently managing media playback in browser tabs. It enhances the browsing experience by automatically pausing and resuming videos based on tab visibility and user-defined settings.
