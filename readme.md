@@ -25,7 +25,17 @@ TabPause is a sophisticated browser extension designed to optimize user producti
 - **Robust Error Management:** Implements fail-safe mechanisms to handle common errors like frame removal (Error: Frame with ID 0 was removed) with less than 0.1% occurrence rate.
 - **Detailed Logging:** Generates comprehensive logs capturing playback events, errors, and extension activities for troubleshooting and analysis.
 
-## Deployment and User Experience
+### 6. Tech Stack
+
+- **JavaScript**: Core programming language used for extension development.
+- **HTML/CSS**: Used for extension UI elements and styling.
+- **Chrome Extensions API**: Leveraged for integrating with Chrome browser functionalities.
+- **Firefox WebExtensions API**: Used for compatibility with Firefox browser.
+- **DOM Manipulation**: Utilized advanced DOM traversal techniques for detecting and manipulating `<video>` elements.
+- **Event-Driven Architecture**: Implemented event listeners for handling tab visibility changes and triggering playback actions.
+
+
+### 7.  Deployment and User Experience
 - **Installation:** Seamless installation process via Chrome Web Store and Firefox Add-ons repository, averaging 10,000 new installs per month.
 - **User Interface:** Intuitive toolbar interface with real-time status indicators, providing quick access to settings and playback controls.
 
